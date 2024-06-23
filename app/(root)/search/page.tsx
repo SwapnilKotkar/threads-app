@@ -1,13 +1,7 @@
 import React from "react";
-import PostThread from "@/components/forms/PostThread";
 import { fetchUser, fetchUsers } from "@/lib/actions/user.actions";
 import { currentUser } from "@clerk/nextjs/server";
 import { redirect } from "next/navigation";
-import ProfileHeader from "@/components/shared/ProfileHeader";
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { profileTabs } from "@/constants";
-import Image from "next/image";
-import ThreadsTab from "@/components/shared/ThreadsTab";
 import UserCard from "@/components/cards/UserCard";
 
 const Page = async ({ params }: { params: { id: string } }) => {
